@@ -7,9 +7,9 @@ One is for play, and the other 12 are connected to a USB sound card, audio ampli
 
 ![midi play system](./image/audiosystem.png)
 
-To play good audio, I need to properly parse the MIDI file I'm trying to play. MIDI channels should be properly assigned to the 12 audio systems. For example, if you want to play a MIDI file containing 15 MIDI channels, you can determine the number of note plays for each channel, and assign one audio system to the channels with high frequency use and all the channels with low frequency use to one audio system at a time.
+To play good audio, I need to properly parse the MIDI file I'm trying to play. MIDI channels should be properly assigned to the 12 audio systems. For example, if you want to play a MIDI file containing 15 MIDI channels, you can determine the number of note plays for each channel, and assign one audio system to the channels with high usage and all the channels with low usage to one audio system at a time.
 In this way, you can create an optimized channel distribution rule for each MIDI file.
-To do this, you need a tool that analyzes the MIDI files.There are various tools to analyze MIDI files, but what I need is summary data for each channel. To do this, I simply created a Python program using the mido package.
+To do this, I need a tool that analyzes the MIDI files. There are various tools to analyze MIDI files, but what I need is summary data for each channel. To do this, I simply created a Python program using the mido package.
 
 ## Install mido
 
